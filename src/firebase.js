@@ -4,11 +4,11 @@ import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY || "AIzaSyBAk89NsIaUNqwQlIpvwMXDfUnytGKxzxo",
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN || "voice-login-fwqb.vercel.app",
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID || "guidant-830b4",
-  appId: process.env.REACT_APP_FIREBASE_APP_ID || "1:152749627191:web:b624be88cbd058d6a76cb2",
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET || "guidant-830b4.firebasestorage.app",
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID || "152749627191",
+  authDomain: "guidant-830b4.web.app", // ✅ Firebase Hosting 도메인 (핵심)
+  projectId: "guidant-830b4",
+  appId: "1:152749627191:web:b624be88cbd058d6a76cb2",
+  storageBucket: "guidant-830b4.firebasestorage.app",
+  messagingSenderId: "152749627191",
 };
 
 export const app = initializeApp(firebaseConfig);
